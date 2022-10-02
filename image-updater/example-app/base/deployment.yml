@@ -16,10 +16,8 @@ spec:
         app: trivial-go-web-app
     spec:
       containers:
-      - name: webserver-simple
-        imagePullPolicy: Always
-        image: ghcr.io/codefresh-contrib/gitops-cert-level-2-examples:latest
-        ports:
-        - containerPort: 8080        
-
-
+        - name: webserver-simple
+          imagePullPolicy: Always
+          image: ghcr.io/medival/gitops-cert-level-2-examples:latest
+          ports:
+            - containerPort: 8080
